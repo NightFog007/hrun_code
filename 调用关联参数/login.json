@@ -1,0 +1,54 @@
+{
+    "config": {      
+        "name": "登录接口测试",
+        "variables": {
+            "username": "1",
+            "password": "1",
+            "equipmentid": "10002"
+            
+        },
+        "base_url": "http://127.0.0.1:12356"
+    },
+
+
+    "teststeps": [
+       
+        
+        {
+            "name": "/login",
+            "request": {
+                "url": "/login",
+                "method": "POST",
+                "headers": {
+                    "Content-Type": "application/json; charset=utf-8",
+                    "User-Agent": "Paw/3.1.9 (Macintosh; OS X/10.14.5) GCDHTTPRequest"
+                },
+                "json": {
+                    "username": "$username",
+                    "password": "$password"
+                }
+            },
+            "validate": [
+                {
+                    "eq": [
+                        "status_code",
+                        200
+                    ]
+                },
+                {
+                    "eq": [
+                        "headers.Content-Type",
+                        "text/html; charset=UTF-8"
+                    ]
+                },
+                {
+                    "eq": [
+                        "body.Content-Type",
+                        "text/html; charset=UTF-8"
+                    ]
+                }
+            ]
+        }
+        
+    ]
+}
