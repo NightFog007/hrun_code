@@ -1,0 +1,17 @@
+{
+    "config": {  
+        "name": "create users with uid"    
+    },
+    "testcases": 
+       {
+           "ceshi1":{
+            "testcase": "./login.json",
+            "parameters": {
+                "username-password": "${P(account.csv)}"
+              }
+        }
+
+            
+    }
+    
+}
