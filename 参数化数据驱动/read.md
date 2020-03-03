@@ -15,3 +15,4 @@
 * `login.json`是测试案例.
 * `call_code.json` 直接在代码内定义了两个关联变量(`username`,`password`)的值,并调用测试案例`login.json`
 * `call_csv.json` 引用csv文件定义关联变量,(`username`,`password`)的值,并调用测试案例`login.json`
+
