@@ -1,0 +1,39 @@
+{
+    "config": {  
+        "name": "create users with uid"    
+    },
+    "testcases": 
+      [
+        
+            {"ceshi1":{
+             "testcase": "./login.json",
+             "parameters": {
+                 "username-password": [
+                   [
+                     "user1",
+                     "111111"
+                   ]
+                 ]
+               }
+         }
+        }
+             
+     ,
+{
+     
+        "ceshi2":{
+         "testcase": "./login.json",
+         "parameters": {
+             "username-password": [
+               [
+                 "user1",
+                 "111111"
+               ]
+             ]
+           }
+          } 
+    }
+    
+      ]
+    
+}
